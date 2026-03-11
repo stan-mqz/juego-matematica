@@ -9,7 +9,18 @@
   </head>
   <body>
     <div class="question">
-      <p>Hello</p>
+      <div class="question-header">
+        <h1>Juego de Límites</h1>
+        <span id="difficulty-label" class="difficulty-chip">Fácil</span>
+      </div>
+      <div class="question-body">
+        <p id="question-text">Pulsa "Siguiente" para comenzar.</p>
+      </div>
+      <div id="options-container" class="options"></div>
+      <div class="controls">
+        <button id="next-btn" class="secondary">Siguiente</button>
+      </div>
+      <p id="status-text" class="status-text"></p>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
