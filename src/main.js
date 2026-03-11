@@ -2,7 +2,7 @@
 
 
 const questionText = document.getElementById("question-text");
-const difficultyLabel = document.getElementById("difficulty-label");
+
 const nextBtn = document.getElementById("next-btn");
 const statusText = document.getElementById("status-text");
 const card = document.querySelector(".question");
@@ -160,10 +160,6 @@ let currentQuestion = null;
 let gameOver = false;
 let hasAnsweredCurrent = false;
 
-function setDifficultyLabel(key) {
-  difficultyLabel.textContent = difficultyNames[key];
-  difficultyLabel.dataset.level = key;
-}
 
 function pickNextQuestion() {
   while (
@@ -183,7 +179,6 @@ function pickNextQuestion() {
   }
 
   const levelKey = difficultyOrder[currentDifficultyIndex];
-  setDifficultyLabel(levelKey);
 
   const list = remaining[levelKey];
   const index = Math.floor(Math.random() * list.length);
