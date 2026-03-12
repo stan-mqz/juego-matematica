@@ -1,6 +1,3 @@
-
-
-
 const questionText = document.getElementById("question-text");
 
 const nextBtn = document.getElementById("next-btn");

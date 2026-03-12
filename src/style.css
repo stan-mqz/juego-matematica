@@ -29,20 +29,9 @@ body {
   box-sizing: border-box;
 }
 
-/* Estilo Logo Millonario */
-h1.logo {
-  font-family: serif;
-  font-size: 3.5rem;
-  margin: 0 0 40px 0;
-  text-transform: uppercase;
-  background: linear-gradient(to bottom, #f5e49c 0%, #d4af37 50%, #a08118 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.6));
-  text-align: center;
-  line-height: 1.1;
-  letter-spacing: 2px;
+img{
+  width: 40vh;
+  height: 40vh;
 }
 
 .question {
