@@ -173,7 +173,6 @@ function pickNextQuestion() {
     questionText.textContent = "¡Has completado todas las preguntas!";
     statusText.textContent =
       "Muy bien, has pasado por todos los niveles de dificultad.";
-    checkBtn.disabled = true;
     nextBtn.style.display = "none";
     return;
   }

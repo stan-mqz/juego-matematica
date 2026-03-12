@@ -1,27 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>juego-matematica</title>
-  </head>
-  <body>
-    <div class="question">
-      <div class="question-header">
-        <h1>Juego de Límites</h1>
-        <!-- <span id="difficulty-label" class="difficulty-chip">^^</span> -->
-      </div>
-      <div class="question-body">
-        <p id="question-text">Pulsa "Siguiente" para comenzar.</p>
-      </div>
-      <div id="options-container" class="options"></div>
-      <div class="controls">
-        <button id="next-btn" class="secondary">Siguiente</button>
-      </div>
-      <p id="status-text" class="status-text"></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Límite o Nada</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+      <h1 class="logo">Límite o Nada</h1>
     </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    
+    <div class="question-container question">
+      <div class="question-text" id="question-text">
+        Cargando pregunta...
+      </div>
+    </div>
+
+    <div class="options-grid" id="options-container">
+      <!-- Las opciones se generan vía JS -->
+    </div>
+
+    <div class="controls">
+      <p id="status-text" class="status-text"></p>
+      <button id="next-btn" class="next-btn" style="display: none;">Siguiente Pregunta</button>
+    </div>
+  </div>
+  <script src="./src/main.js" defer></script>
+</body>
 </html>
