@@ -139,6 +139,33 @@ img{
   box-shadow: 0 4px 0 #a08118;
   text-transform: uppercase;
 }
+/* Estilo para el cuadro de explicación */
+.explanation-box {
+  background: rgba(141, 163, 214, 0.1);
+  border-left: 4px solid var(--text-gold);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: #bdc3c7;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estado de derrota para la tarjeta */
+.question.lost {
+  border-color: var(--wrong-red);
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+}
 
 #next-btn:hover {
   background: #f1c40f;
